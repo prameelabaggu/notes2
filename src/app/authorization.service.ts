@@ -19,6 +19,7 @@ export class AuthorizationService implements HttpInterceptor
       return next.handle(transformedReqObj);
 
     }
+    
     else{
       return next.handle(req);
     }

@@ -32,6 +32,5 @@ app.use((err,req,res,next)=>{
     res.send({message:"error occured",reason:err.message});
 })
 
-
-const port = 3000;
+const port=process.env.PORT||8080;
 app.listen(port,()=>console.log(`Server started on port ${port}`))

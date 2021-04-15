@@ -48,7 +48,7 @@ userApiObj.post("/registeruser",asynchandler(async(req,res,next)=>{
             firstname : userObj.firstname,
             lastname : userObj.lastname,
             username : userObj.username,
-            password : hashedpwd
+            password : hashedpwd 
         })
 
         await newUser.save();
